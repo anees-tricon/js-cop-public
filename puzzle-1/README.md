@@ -12,7 +12,18 @@ if(isActive) {
 }
 ```
 
-As you can see, the function essentially returns a value with which we make a decision.
+As you can see in `src/index.ts`, the function essentially returns a value with which we make a decision.
+
+```js
+return (
+  (start &&
+    start.getMonth() === monthToBeChecked &&
+    start.getFullYear() === yearToBeChecked) ||
+  (end &&
+    end.getMonth() === monthToBeChecked &&
+    end.getFullYear() === yearToBeChecked)
+);
+```
 
 But looking at the return type of the function, and also looking at the test cases, we can see that the function returns either of true, false and null.
 
@@ -22,8 +33,8 @@ As part of the puzzle, you have to do the following.
 
 1. Identify why the output is not just boolean and provide the explanation in the readme section below.
 2. Change the code so that the type will be `boolean` and not `boolean | null`.
-3. Add supporting test cases for the changes in 2.
-4. Raise a PR containing changed code and updated Readme.
+3. Modify test cases for the changes in 2.
+4. Raise a PR containing changed code and the updated Readme.
 
 ## Explanation (point 1)
 
