@@ -3,10 +3,10 @@ name: "Build and Test"
 on: [push, pull_request]
 
 jobs:
-  strategy:
-    matrix:
-      puzzles_directory: ["./puzzle-1"]
   build_test:
+    strategy:
+      matrix:
+        puzzles_directory: ["./puzzle-1"]
     name: "Build and Test"
     runs-on: ubuntu-latest
     steps:
