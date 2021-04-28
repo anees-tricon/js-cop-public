@@ -1,0 +1,22 @@
+name: "Build and Test"
+
+on: [push, pull_request]
+
+jobs:
+  strategy:
+    matrix:
+      puzzles_directory: ["./puzzle-1"]
+  build_test:
+    name: "Build and Test"
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 12
+      - run: npm ci
+        working-directory: ${{matrix.puzzles_directory}}
+      - run: npm run build
+        working-directory: ${{matrix.puzzles_directory}}
+      - run: npm run test
+        working-directory: ${{matrix.puzzles_directory}}
