@@ -39,7 +39,7 @@ As part of the puzzle, you have to do the following.
 ## Explanation (point 1)
 
 The return type of the method can also be null because...
-`null && true` or `null && false` evaluates to `null`. This is because `null` is a JavaScript literal that represents an "empty" value or "undefined". It is neither equal to boolean true nor equal to boolean false, because it's value is undefined. The value of null is more inclined towards false even though it is not false. It's thus called a "falsey" operator. In another explanation, `true` and `false` boolean values, that are coerced to a number via `ToNumber()`, which converts `true` to `1` and `false` to `+0`. The Null type, doesn't coerce and thus does not compare as equal to either `1` or `+0`.
+`null && true` or `null && false` evaluates to `null`. This is because `null` is a JavaScript literal that represents an "empty" value or "undefined". It is neither equal to boolean `true` nor equal to boolean `false`, because it's value is `undefined`. The value of `null` is more inclined towards `false` even though it is not false. It's thus called a "falsey" operator. In another explanation, `true` and `false` boolean values, that are coerced to a number via `ToNumber()`, which converts `true` to `1` and `false` to `+0`. The Null type, doesn't coerce and thus does not compare as equal to either `1` or `+0`.
 
 Explanations are here: https://stackoverflow.com/a/27632465 , https://stackoverflow.com/a/27632549
 
