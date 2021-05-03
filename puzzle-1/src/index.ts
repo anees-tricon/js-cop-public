@@ -36,10 +36,10 @@ export const isActiveMonth: IsActive = (
   end = null
 ) => {
   return (
-    (start &&
+    (!!start &&
       start.getMonth() === monthToBeChecked &&
       start.getFullYear() === yearToBeChecked) ||
-    (end &&
+    (!!end &&
       end.getMonth() === monthToBeChecked &&
       end.getFullYear() === yearToBeChecked)
   );
