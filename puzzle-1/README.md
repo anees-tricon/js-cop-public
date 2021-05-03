@@ -33,7 +33,7 @@ As part of the puzzle, you have to do the following.
 
 1. Identify why the output is not just boolean and provide the explanation in the readme section below.
 2. Change the code so that the type will be `boolean` and not `boolean | null`.
-3. Modify test cases for the changes in 2 so that all tests passes(4 are failing right now).
+3. Make sure the existing test cases are all passing(4 are failing right now).
 4. Raise a PR containing changed code and the updated Readme.
 
 ## Explanation (point 1)
