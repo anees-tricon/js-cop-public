@@ -39,7 +39,16 @@ As part of the puzzle, you have to do the following.
 ## Explanation (point 1)
 
 The return type of the method can also be null because...
-Your answer goes here. You can provide example codes, explanations and supporting links.
+the && oprator returns the first falsy value while evaluating from left to right.
+
+null && false // will return null because the first operand is falsy and it returns null.
+
+There are two ways to convert non-boolean to boolean
+Boolean(value)
+!!value
+
+https://javascript.info/logical-operators
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean
 
 ## Engine
 
