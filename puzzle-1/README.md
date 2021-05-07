@@ -38,8 +38,23 @@ As part of the puzzle, you have to do the following.
 
 ## Explanation (point 1)
 
-The return type of the method can also be null because...
-Your answer goes here. You can provide example codes, explanations and supporting links.
+The return type of the method can also be null because of the following reason:
+The AND && operator does the following:
+
+Evaluates operands from left to right.
+For each operand, converts it to a boolean. If the result is false, stops and returns the original value of that operand.
+If all operands have been evaluated (i.e. all were truthy), returns the last operand.
+In other words, AND returns the first falsy value or the last value if none were found.
+alert( null && 5 ) // null
+
+null is a falsy value (i.e. it evaluates to false if coerced to a boolean)
+
+How we can convert null to a false boolean value.
+By using -> !!(value). The other way is Boolean(value)
+
+Supporting Links : 
+- https://javascript.info/logical-operators
+- https://www.samanthaming.com/tidbits/19-2-ways-to-convert-to-boolean/
 
 ## Engine
 
