@@ -14,7 +14,7 @@ type IsActive = (
   yearToBeChecked: number,
   start?: Date | null,
   end?: Date | null
-) => boolean | null;
+) => boolean;
 
 /**
  *
@@ -35,7 +35,7 @@ export const isActiveMonth: IsActive = (
   start = null,
   end = null
 ) => {
-  return (
+  return !!(
     (start &&
       start.getMonth() === monthToBeChecked &&
       start.getFullYear() === yearToBeChecked) ||
